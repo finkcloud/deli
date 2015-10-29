@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Delicious Foods Enugu | Enugu Nigeria</title>
+	<link href="./css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+	</script>
+	<meta name="keywords" content=" ">
+
+	<script type="text/javascript" src="./js/move-top.js"></script>
+	<script type="text/javascript" src="./js/easing.js"></script>
+	<script src="./js/TweenMax.min.js"></script>
+	<script src="./js/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+
+	$(function(){	
+
+    var $window = $(window);
+	var scrollTime = 0.2;
+	var scrollDistance = 270;
+
+	$window.on("mousewheel DOMMouseScroll", function(event){
+
+		event.preventDefault();	
+
+		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+		var scrollTop = $window.scrollTop();
+		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
+		TweenMax.to($window, scrollTime, {
+			scrollTo : { y: finalScroll, autoKill:true },
+				ease: Power1.easeOut,
+				overwrite: 5							
+			});
+
+		});
+	});
+	</script>
+
+		<link href="./css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="./js/wow.min.js"></script>
+
+		<script>
+		 new WOW().init();
+		</script>
+</head>
+
+
+<body>
+	<!--banner start here-->
+	<div class="banner">
+		<div class="header">
+				<div class="container">
+			      <div class="header-main">
+					<div class="logo wow bounceInLeft animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInLeft;">
+						<a href="#"><img src="./images/lo.png" alt=""></a>
+					</div>
+					<div class="head-right wow bounceInRight animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInRight;">
+						<ul>
+							<li><span class="phon"> </span><h4>(234) 812-345-254</h4></li>
+							<li><a href="mailto:infoexample@email.com"><span class="email"> </span>hello@deliciousfood.com</a></li>
+						</ul>
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+				<div class="banner-main wow bounceInRight animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: bounceInRight;">
+					<h2>A Place of Food</h2>
+					<p>We offer the best meals at the best value. Receive great food and quality service.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--we do grid start here-->
+	<div class="we-do">
+		<div class="container">
+			<div class="wedo-main">
+				<div class="we-do-top">
+					<h3>WHAT WE OFFER</h3>
+				</div>
+				<div class="we-do-bottom">
+					<div class="col-md-3 we-do-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
+						<img src="./images/f1.png" alt="">
+						<h4>Hot Meal</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua.</p>
+					</div>
+					<div class="col-md-3 we-do-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
+						<img src="./images/f2.png" alt="">
+						<h4>Snacks & Lunch</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua.</p>
+					</div>
+					<div class="col-md-3 we-do-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
+						<img src="./images/f3.png" alt="">
+						<h4>Internet Cafe</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua.</p>
+					</div>
+					<div class="col-md-3 we-do-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
+						<img src="./images/f4.png" alt="">
+						<h4>Drinks</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--we do grid end here-->
+
+	<!--footer start here-->
+	<div class="footer">
+			<div class="footer-main">
+				<div class="col-md-6 map-frame" style="visibility: visible;">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="791.5" height="452" src="https://maps.google.com/maps?hl=en&q=Nwodo Streeet Enugu&ie=UTF8&t=roadmap&z=16&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://www.premiumlinkgenerator.com/">free link generators on premiumlinkgenerator.com</a></small></div></iframe>
+				</div>
+				<div id="contact-box" class="col-md-6 footer-grid">
+					<h3>Get in Touch</h3>
+					<p>Address : Richard McClintock</p>
+					<p>New Street : Letraset sheets</p>
+					<p>ph : +123 859 6050</p>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+		<!--Contact Box -->
+		<div id="contactbox">
+			<div class="container">
+				<div class="we-do-top">
+					<h3 class="wow bounceInLeft animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInRight;">
+						CONTACT US
+					</h3>
+				</div>
+				<div class="box wow bounceInLeft animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInRight;">
+					<form action="" method="POST">
+						<p>NAME</p><input class="textbox" name="name">
+						<p>EMAIL</p><input class="textbox" name="name">
+						<p>MESSAGE</p><textarea class="message" name="name"></textarea> 
+					</form>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!--footer end here-->
+	
+
+</body>
+</html>
